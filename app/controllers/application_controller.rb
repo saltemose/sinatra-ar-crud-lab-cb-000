@@ -33,4 +33,10 @@ class ApplicationController < Sinatra::Base
     @post = params[:id]
     erb :edit
   end
+
+  delete '/article/:id' do
+  @article_object = Article.delete(params[:id])
+  redirect to("/")
+end
+
 end
