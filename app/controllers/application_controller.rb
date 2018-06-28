@@ -9,13 +9,18 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/new' do
-    @post = Post.new(params)
+    Post.new(params)
     erb :new
   end
+
+  get '/posts' do
+    @
 
   post '/posts' do
     @post_name = params[:name]
     @post_content = params[:content]
     erb :index
   end
+
+  get '/sh'
 end
