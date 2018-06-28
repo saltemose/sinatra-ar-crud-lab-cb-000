@@ -14,8 +14,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    @post = Post.all
-    erb :index 
+    @posts = Post.all
+    erb :index
   end
 
   post '/posts' do
@@ -24,5 +24,5 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  get '/sh'
+  get '/posts/:id'
 end
