@@ -3,5 +3,5 @@ Name: <%= @post.name %>
 Content: <%= @post.content %>
 
 <form class="" action="'/posts/:id/delete'" method="post">
-  
+<input id="hidden" type="hidden" name="_method" value="delete">
 </form>
