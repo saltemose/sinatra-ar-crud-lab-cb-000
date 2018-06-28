@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    @
+    @post = Post.all
 
   post '/posts' do
     @post_name = params[:name]
